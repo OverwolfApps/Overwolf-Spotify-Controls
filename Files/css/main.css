@@ -1,0 +1,156 @@
+html,body{
+	margin:0;
+	overflow:hidden;
+	width: 430px;
+	height: 232px;
+}
+canvas{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+#btnPrevTrack{
+	position: absolute;
+	top: 62px;
+	left: 40px;
+	width: 61px;
+	height: 54px;
+	background-image: url("/Files/images/prevtrack.png");
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#btnPrevTrack:hover{
+	background-image: url("/Files/images/prevtrack_hover.png");
+}
+#btnPlayPause{
+	position: absolute;
+	top: 55px;
+	left: 100px;
+	width: 68px;
+	height: 68px;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#btnPlayPause.play{
+	background-image: url("/Files/images/play.png");
+}
+#btnPlayPause.play:hover{
+	background-image: url("/Files/images/play_hover.png");
+}
+#btnPlayPause.pause{
+	background-image: url("/Files/images/pause.png");
+}
+#btnPlayPause.pause:hover{
+	background-image: url("/Files/images/pause_hover.png");
+}
+#btnNextTrack{
+	position: absolute;
+	top: 62px;
+	left: 165px;
+	width: 61px;
+	height: 54px;
+	background-image: url("/Files/images/nexttrack.png");
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#btnNextTrack:hover{
+	background-image: url("/Files/images/nexttrack_hover.png");
+}
+#btnClose{
+	position: absolute;
+	top: 5px;
+	left: 245px;
+	width: 20px;
+	height: 20px;
+	background-image: url("/Files/images/close.png");
+	cursor: pointer;
+}
+#btnClose:hover{
+	background-image: url("/Files/images/close_hover.png");
+}
+#content > #btnToggleSize{
+	position: absolute;
+	top: 5px;
+	left: 225px;
+	width: 20px;
+	height: 20px;
+	background-image: url("/Files/images/minimize.png");
+	cursor: pointer;
+}
+#content > #btnToggleSize:hover{
+	background-image: url("/Files/images/minimize_hover.png");
+}
+#content{
+
+	width: 250px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 15px;
+	background-color:#000000;
+	box-shadow: rgba(0,0,0,0.5) 8px 8px 8px;
+	
+	border: 1px solid #9e0000;
+	
+    user-select: none;
+	
+	cursor: default;
+}
+#logo{
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100px;
+	height: 40px;
+}
+#content.minimized > #btnToggleSize{
+	top: 6px;
+	left: 385px;
+	background-image: url("/Files/images/maximize.png");
+}
+#content.minimized > #btnToggleSize:hover{
+	background-image: url("/Files/images/maximize_hover.png");
+}
+#content.minimized > #btnClose{
+	top: 6px;
+	left: 403px;
+}
+#content.minimized{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 10px;
+	width: 405px;
+	background: rgba(0,0,0,0.6);
+}
+#content.minimized > #btnPrevTrack{
+	top:6px;
+	left: 315px;
+	height: 20px;
+	width: 30px;
+}
+#content.minimized > #btnPlayPause{
+	top:6px;
+	left: 340px;
+	height: 20px;
+	width: 20px;
+}
+#content.minimized > #btnNextTrack{
+	top:6px;
+	left: 360px;
+	height: 20px;
+	width: 30px;
+}
+#content.minimized > canvas
+{
+	top: 1px;
+	left: 100px;
+}
+#content.minimized > #logo{
+	top: -5px;
+}
